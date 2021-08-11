@@ -48,7 +48,7 @@ city_entry.grid(row=1, column=0, ipady=10, stick=W+E+N+S)
 
 def city_name():
     # API Call 
-    api_key = '02b8672731c7f47f7d090e579a9bb6d5'
+    api_key = ''                     # Enter your api-ID here
     api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+ city_entry.get() + "&units=metric&appid="+api_key) 
 
     api = json.loads(api_request.content) 
